@@ -1,0 +1,26 @@
+
+#erreur {
+	text-transform: uppercase;
+	color: #333;
+	font: bold 4vw Helvetica, Arial, Sans-Serif;
+	top: 50%;
+    left: 50%;
+    position: absolute;
+  	transform: translate(-50%, -50%);
+	text-align: center;
+    animation-duration: 0.6s;
+	animation-fill-mode: forwards;
+	animation-name: erreurShaddow;
+    animation-timing-function: ease-out;
+}
+
+@keyframes erreurShaddow {
+    0% {
+        text-shadow: none;
+    }
+    100% {
+        text-shadow: 	1px 1px #f00, 
+						2px 2px #f00, 
+						3px 3px #f00;
+    }
+}

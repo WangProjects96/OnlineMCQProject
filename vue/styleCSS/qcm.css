@@ -1,0 +1,221 @@
+/* 
+
+
+header, footer, #qcm_info {
+	position: fixed;	
+	z-index: 70;
+}
+
+#qcm_info {
+	top: 15%;
+}
+
+.section {
+	color: #fff;
+	padding-left: 25%;
+}
+
+.q_num {
+	position: absolute;
+	top: 20%;
+    right: 57px;
+    font-size: 20px;
+}
+
+.question {
+	font: bold 3.6vw Helvetica, Arial, Sans-Serif;
+	text-shadow: 	1px 1px #f00;
+}
+
+.reponse {
+	font: bold 2vw Helvetica, Arial, Sans-Serif;
+    color: #777;
+    margin-left: 4vw;
+	transition: text-shadow 0.5s ease-in-out;
+}
+
+label:hover , input:focus + label {
+	text-shadow: 	1px 1px #0182cc, 
+					2px 2px #0182cc, 
+					3px 3px #0182cc,
+}
+
+input[type=checkbox] {
+   
+}
+
+input[type=radio] {
+   position: absolute;
+   top: -9999px;
+   left: -9999px;
+}
+
+input:checked + label {
+  color: #fff;
+}
+
+.desactiv {
+	background-color: #333;
+	background-image: repeating-linear-gradient(45deg, transparent, transparent 8px, #f00 8px, #f00 12px);
+}
+
+.desactiv:hover {
+	cursor: default;
+}
+
+.q_bouton {
+	width: 100px;
+	bottom: 5%;
+	right: 57px;
+	position: absolute;
+}
+
+.activ {
+	background: none;
+}
+
+.activ:hover, footer input[type=button]:hover {
+	color: #fff;
+	background: #0182cc;
+}
+
+footer input[type=button] {
+	background: none;
+    position: absolute;
+    bottom: 5%;
+    left: 57px;
+    width: 100px;
+	cursor: pointer;
+}
+
+*/
+
+table {	
+	text-align : center;
+  	box-shadow :2px 2px 5px black;
+  	background-color: white;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+tr th, tr td {
+	font-weight: bold;
+	padding: 12px 30px;
+	padding-left: 42px;
+	text-align : left;
+	margin: auto;
+}
+
+thead {
+	border-radius : 2px;
+	cursor: pointer;
+	background: #0182cc;
+	border-top: 5px solid #333;
+}
+
+thead:first-child {
+	border-top: none;
+}
+
+tr th.headerSortUp, tr th.headerSortDown {
+	background: #333;
+}
+
+.petit {
+	transform: none;
+	top: auto;
+	left: auto;
+	box-shadow: none;
+	position: relative;
+	margin: auto;
+}
+
+tr th input[type="button"] {
+	margin: auto;
+	width: auto;
+}
+
+tr td input[type="button"] {
+	margin: auto;
+	padding-left: 7px;
+
+}
+
+tr td input[type="submit"] {
+	margin: auto;
+	padding-left: 7px;
+	width: auto;	
+	border-radius: 5px;
+}
+
+#bureau {
+	width: 70%;
+}
+
+.vrai{
+	color : blue;
+}
+.faux{
+	color : red;
+}
+
+.no_rep{
+	color : black;
+}
+
+.presse {
+	animation: clignote 1s infinite;
+}
+
+@keyframes clignote {
+  	0%{background: #eee;}
+	50%{background: #0182cc; color: #fff;}
+	100%{background: #eee;}
+}
+
+.q {
+	border-top: 5px solid #333;
+}
+
+.q .texte, .q .gris {
+	font-size: 30px;
+	text-align: left;
+	max-width: 750px;
+}
+
+tr td.question {
+	padding-right: 0;
+	padding-left: 10px;
+}
+
+input[type=radio], input[type=checkbox] {
+	display: initial;
+	width: auto;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+thead tr td.texte {
+	text-align: center;
+}
+
+.gris {
+	color: #ddd;
+}
+
+#qcm {
+	margin-top: 60px;
+	margin-bottom: 20px;
+}
+
+input[type=submit].valide {
+	background-color: #ddd;
+	background-image: repeating-linear-gradient(45deg, transparent, transparent 8px, #f00 8px, #f00 12px);
+	cursor: default;
+}
+
+
+input[type=button] {
+	width: 200px;
+	border-radius: 5px;
+}
